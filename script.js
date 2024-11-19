@@ -17,6 +17,11 @@ const winPatterns = [
 
 const resetGame = () => {
     turnO = true;
+     if (turnO) {
+            box.classList.add("zero");
+        } else {
+            //playerX
+            box.classList.add("cross");
     count=0;
     enableBoxes();
     msgcontainer.classList.add("hide");
